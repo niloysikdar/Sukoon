@@ -32,14 +32,14 @@
 }
 
 .login {
-  background: url("../../assets/ipad-bg.svg") no-repeat;
+  background: url("../../assets/login/ipad-bg.svg") no-repeat;
   background-size: cover;
   height: 100%;
   width: 65%;
   padding: 3rem 0rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -52,11 +52,15 @@
   color: #81d4fe;
 }
 
-.login .sawo-container {
-  margin-top: 2.5rem;
-  height: 500px;
-  width: 400px;
-  background: #00000044;
+#sawo-container {
+  margin-top: 6rem;
+  height: 250px;
+  width: 300px;
+  background: #000080;
+}
+
+.textinput-label {
+  color: #000;
 }
 
 @media (max-width: 1000px) {
@@ -69,7 +73,7 @@
 }
 
 @media (max-width: 500px) {
-  .login .sawo-container {
+  #sawo-container {
     width: 300px;
   }
 }
