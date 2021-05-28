@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import Sawo from "sawo";
 import logo from "../../assets/login/logo.svg";
 import "./Login.css";
@@ -6,18 +7,20 @@ import "./Login.css";
 const { REACT_APP_API_SAWO } = process.env;
 
 const Login = () => {
+  const history = useHistory();
   useEffect(() => {
     var config = {
       containerID: "sawo-container",
       identifierType: "email",
       apiKey: REACT_APP_API_SAWO,
       onSuccess: (payload) => {
-        console.log(payload);
+        history.replace("/feelings");
+        // console.log(payload);
       },
     };
     let sawo = new Sawo(config);
     sawo.showForm();
-  }, []);
+  }, [history]);
 
   return (
     <div className="main">
