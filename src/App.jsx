@@ -1,8 +1,13 @@
+import { Route, Switch } from "react-router-dom";
+import Login from "./components/Login/Login";
+
 const App = () => {
   return (
-    <div>
-      <h2>Hello World</h2>
-    </div>
+    <Switch>
+      <Route path="/" exact>
+        <Login />
+      </Route>
+    </Switch>
   );
 };
 
