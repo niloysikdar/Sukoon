@@ -1,46 +1,40 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faBell } from "@fortawesome/free-solid-svg-icons";
 import { ResoucesList } from "./ResoucesList";
-import "./Resources.css";
+import classes from "./Resources.module.css";
+import HeaderMobile from "../Header/HeaderMobile";
+import BottomNav from "../BottomNav/BottomNav";
 
 const Resources = () => {
   return (
     <div>
-      <div className="header_mobile">
-        <FontAwesomeIcon icon={faArrowLeft} />
-        <FontAwesomeIcon icon={faBell} />
-      </div>
-      <div className="bottomnav_mobile">
-        <FontAwesomeIcon icon={faArrowLeft} />
-        <FontAwesomeIcon icon={faBell} />
-      </div>
-      <div className="header_desktop">
-        <div className="logo">
+      <HeaderMobile />
+      <BottomNav />
+      <div className={classes.header_desktop}>
+        <div className={classes.logo}>
           <h2>Sukoon</h2>
         </div>
-        <div className="options">
+        <div className={classes.options}>
           <h2>Home</h2>
           <h2>Favourites</h2>
           <h2>Resources</h2>
           <h2>Test</h2>
-          <div className="profile"></div>
+          <div className={classes.profile}></div>
         </div>
       </div>
-      <div className="main">
-        <div className="categories">
+      <div className={classes.main}>
+        <div className={classes.categories}>
           {ResoucesList.map((item) => {
             return (
-              <div className="category" key={item.tag}>
+              <div className={classes.category} key={item.tag}>
                 <img src={item.image} alt={item.tag} />
                 <h2>{item.tag}</h2>
               </div>
             );
           })}
         </div>
-        <h3 className="para">
+        <h3 className={classes.para}>
           To know about other mental health issues, talk to our chatbot:
         </h3>
-        <button className="button">Go to Chatbot</button>
+        <button className={classes.button}>Go to Chatbot</button>
       </div>
     </div>
   );

@@ -1,0 +1,25 @@
+.bottomnav_mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 0 2rem;
+  background: var(--header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+
+.bottomnav_mobile .fas,
+.bottomnav_mobile .far {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+@media (max-width: 1000px) {
+  .bottomnav_mobile {
+    display: flex;
+  }
+}
