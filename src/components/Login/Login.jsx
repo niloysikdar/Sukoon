@@ -23,7 +23,7 @@ const Login = () => {
   }, [history]);
 
   return (
-    <div className="main">
+    <div className="main_login">
       <div className="splash">
         <img src={logo} alt="Logo" />
         <h2 className="title">Sukoon</h2>
