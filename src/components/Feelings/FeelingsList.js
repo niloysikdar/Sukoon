@@ -1,22 +1,22 @@
 export const FeelingsList = [
   {
-    image: "../../assets/feelings/depressed.png",
+    image: require("../../assets/feelings/depressed.png").default,
     tag: "Depressed",
   },
   {
-    image: "../../assets/feelings/sad.png",
+    image: require("../../assets/feelings/sad.png").default,
     tag: "Sad",
   },
   {
-    image: "../../assets/feelings/happy.png",
+    image: require("../../assets/feelings/happy.png").default,
     tag: "Happy",
   },
   {
-    image: "../../assets/feelings/anxious.png",
+    image: require("../../assets/feelings/anxious.png").default,
     tag: "Anxious",
   },
   {
-    image: "../../assets/feelings/angry.png",
+    image: require("../../assets/feelings/angry.png").default,
     tag: "Angry",
   },
 ];
