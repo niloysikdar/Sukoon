@@ -4,6 +4,7 @@ import Feelings from "./components/Feelings/Feelings";
 import Resources from "./components/Resources/Resources";
 import Depression from "./components/Resources/Depression/Depression";
 import Anxiety from "./components/Resources/Anxiety/Anxiety";
+import Ptsd from "./components/Resources/Ptsd/Ptsd";
 
 const App = () => {
   return (
@@ -22,6 +23,9 @@ const App = () => {
       </Route>
       <Route path="/resources/anxiety">
         <Anxiety />
+      </Route>
+      <Route path="/resources/ptsd">
+        <Ptsd />
       </Route>
     </Switch>
   );
