@@ -25,6 +25,8 @@
   font-size: 36px;
   line-height: 54px;
   color: #dbffff;
+  margin-bottom: 6rem;
+  text-align: center;
 }
 
 .main p {
@@ -34,7 +36,6 @@
   font-size: 36px;
   line-height: 54px;
   color: #dbffff;
-  margin: 7rem 0;
   text-align: center;
 }
 
@@ -44,6 +45,7 @@
   border-radius: 47px;
   cursor: pointer;
   padding: 0.5rem 3rem;
+  margin-top: 4rem;
 }
 
 .main .button h4 {
