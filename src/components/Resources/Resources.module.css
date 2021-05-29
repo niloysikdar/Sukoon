@@ -26,6 +26,7 @@
   background: #bee9fe;
   border-radius: 17px;
   cursor: pointer;
+  text-decoration: none !important;
 }
 
 .main .categories .category h2 {
@@ -35,6 +36,8 @@
   font-size: 36px;
   line-height: 49px;
   color: #000066;
+  text-decoration: none !important;
+  border: none;
 }
 
 .para {

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ResoucesList } from "./ResoucesList";
 import classes from "./Resources.module.css";
 import HeaderMobile from "../Header/HeaderMobile";
@@ -14,10 +15,16 @@ const Resources = () => {
         <div className={classes.categories}>
           {ResoucesList.map((item) => {
             return (
-              <div className={classes.category} key={item.tag}>
-                <img src={item.image} alt={item.tag} />
-                <h2>{item.tag}</h2>
-              </div>
+              <Link
+                to={item.link}
+                key={item.tag}
+                style={{ textDecoration: "none" }}
+              >
+                <div className={classes.category}>
+                  <img src={item.image} alt={item.tag} />
+                  <h2>{item.tag}</h2>
+                </div>
+              </Link>
             );
           })}
         </div>
