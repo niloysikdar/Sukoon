@@ -7,6 +7,7 @@ import Anxiety from "./components/Resources/Anxiety/Anxiety";
 import Ptsd from "./components/Resources/Ptsd/Ptsd";
 import Tellmore from "./components/Tellmore/Tellmore";
 import Activities from "./components/Activities/Activities";
+import Jokes from "./components/Jokes/Jokes";
 
 const App = () => {
   return (
@@ -20,8 +21,11 @@ const App = () => {
       <Route path="/tellmore">
         <Tellmore />
       </Route>
-      <Route path="/activities">
+      <Route path="/activities" exact>
         <Activities />
+      </Route>
+      <Route path="/activities/jokes">
+        <Jokes />
       </Route>
       <Route path="/resources" exact>
         <Resources />
