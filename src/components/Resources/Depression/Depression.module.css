@@ -1,0 +1,138 @@
+.main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 0;
+  background: url("../../../assets/details/details_bg.png");
+  background-size: cover;
+}
+
+.main .wrapper {
+  width: 60%;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+}
+
+.main .wrapper .header h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 65px;
+  color: #81d4fe;
+}
+
+.main .wrapper .header img {
+  margin: 25px 0;
+}
+
+.main .wrapper .content {
+  margin: 1.5rem 0;
+}
+
+.main .wrapper .content .title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 49px;
+  color: #9addfe;
+}
+
+.main .wrapper .content .dsecription {
+  margin-top: 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 39px;
+  color: #dbffff;
+  opacity: 0.9;
+}
+
+.main .wrapper .button_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .wrapper .button {
+  width: 50%;
+  background: #81d5fe;
+  box-shadow: 0px 0px 6px 1px rgba(129, 212, 254, 0.3);
+  border-radius: 47px;
+  text-align: center;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.main .wrapper .button h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 45px;
+  color: #000080;
+}
+
+.main .wrapper .activities {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2.5rem 0;
+}
+
+.main .wrapper .activities h2 {
+  text-align: start;
+  width: 70%;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 49px;
+  color: #9addfe;
+  margin-bottom: 1rem;
+}
+
+.activity_card {
+  width: 70%;
+  background: #bee9fe;
+  border-radius: 5px 0px 0px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1.2rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.activity_card .card_content {
+  margin-left: 1rem;
+}
+
+.activity_card .card_content h3 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 49px;
+  color: #000066;
+}
+
+.activity_card .card_content p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 39px;
+  color: #000080;
+}
