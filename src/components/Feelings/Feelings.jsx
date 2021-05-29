@@ -29,6 +29,9 @@ const Feelings = () => {
           <span>Submit </span>
         </button>
       </Link>
+      <Link to="/tellmore">
+        <p className="tellmore">I want to tell more</p>
+      </Link>
     </div>
   );
 };
