@@ -55,7 +55,7 @@
   background: #bee9fe;
 }
 .feelings .feel:hover p {
-  color: #000;
+  color: #000080;
 }
 
 .feelings .active {
@@ -63,7 +63,7 @@
 }
 
 .feelings .active p {
-  color: #000;
+  color: #000080;
 }
 
 .button {
