@@ -1,0 +1,171 @@
+.main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--darkblue);
+}
+
+.main h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 65px;
+  text-align: center;
+  color: #81d4fe;
+}
+
+.feelings {
+  margin: 2.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feelings .feel {
+  position: relative;
+  height: 150px;
+  width: 200px;
+  margin: 15px 15px;
+  border: 1px solid rgba(154, 221, 254, 0.6);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.feelings .feel p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 39px;
+  text-align: center;
+  color: #81d4fe;
+  transition: 0.5s all;
+}
+
+.feelings .feel:hover {
+  background: #bee9fe;
+}
+.feelings .feel:hover p {
+  color: #000;
+}
+
+.feelings .active {
+  background: #bee9fe;
+}
+
+.feelings .active p {
+  color: #000;
+}
+
+.button {
+  background: #8fadbc, 100%;
+  box-shadow: 0px 0px 6px 1px rgba(129, 212, 254, 0.3);
+  border-radius: 47px;
+  border: none;
+  outline: none;
+  width: 180px;
+  padding: 5px 0;
+  color: #000;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 45px;
+  text-align: center;
+  transition: 0.4s all;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: #81d5fe;
+  color: #000080;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media (max-width: 800px) {
+  .main h2 {
+    font-size: 35px;
+    padding: 0 1rem;
+    line-height: 30px;
+  }
+  .feelings {
+    flex-direction: column;
+    width: 100%;
+  }
+  .feelings .feel {
+    height: 70px;
+    width: 70%;
+    flex-direction: row;
+    justify-content: start;
+    padding: 0 3rem;
+  }
+  .feelings .feel img {
+    position: relative;
+    height: 80%;
+    margin-right: 2.5rem;
+  }
+  .button {
+    width: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    padding: 1.2rem 0;
+    justify-content: space-evenly;
+  }
+  .main h2 {
+    font-size: 25px;
+  }
+  .feelings {
+    margin: 0.7rem 0;
+  }
+  .feelings .feel {
+    height: 60px;
+    width: 80%;
+    padding: 0 1.5rem;
+  }
+  .feelings .feel img {
+    margin-right: 1.5rem;
+  }
+  .button {
+    width: 70%;
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .feelings .feel p {
+    font-size: 24px;
+  }
+}
