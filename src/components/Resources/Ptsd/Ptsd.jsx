@@ -1,4 +1,4 @@
-import DepressionPic from "../../../assets/details/depression_details.png";
+import PtsdPic from "../../../assets/details/ptsd_details.png";
 import breathing from "../../../assets/details/breathing.png";
 import HeaderDesktop from "../../Header/HeaderDesktop";
 import { PtsdContent } from "./PtsdContent";
@@ -12,7 +12,7 @@ const Ptsd = () => {
         <div className={classes.wrapper}>
           <div className={classes.header}>
             <h2>PTSD</h2>
-            <img src={DepressionPic} alt="" />
+            <img src={PtsdPic} alt="" />
           </div>
           {PtsdContent.map((item) => {
             return (
