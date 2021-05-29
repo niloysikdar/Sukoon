@@ -6,6 +6,10 @@ const Jokes = () => {
   const [part1, setJoke1] = useState("");
   const [part2, setJoke2] = useState("");
   useEffect(() => {
+    fetchJoke();
+  }, []);
+
+  const fetchJoke = () => {
     fetch("https://v2.jokeapi.dev/joke/Any?blacklistFlags=religious,sexist")
       .then((res) => {
         return res.json();
@@ -19,7 +23,7 @@ const Jokes = () => {
           setJoke2("");
         }
       });
-  }, []);
+  };
   return (
     <div>
       <HeaderDesktop />
@@ -28,7 +32,7 @@ const Jokes = () => {
         <h3>A streak of good laughter to make you feel better.</h3>
         <p>{part1}</p>
         {part2 && <p>{part2}</p>}
-        <div className={classes.button}>
+        <div className={classes.button} onClick={fetchJoke}>
           <h4>Once More</h4>
         </div>
       </div>
