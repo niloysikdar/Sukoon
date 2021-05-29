@@ -1,0 +1,83 @@
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--darkblue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: #81d4fe;
+}
+
+.main .categories {
+  width: 70%;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main .categories .category,
+.main .categories .category_active {
+  border: 1px solid rgba(154, 221, 254, 0.6);
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 1rem 2.3rem;
+  margin: 1rem 1rem;
+  cursor: pointer;
+  transition: 0.6s all ease-in-out;
+}
+
+.main .categories .category_active {
+  background: #81d5fe;
+}
+
+.main .categories .category:hover {
+  background: #81d5fe;
+}
+
+.main .categories .category:hover h2 {
+  color: #000080;
+}
+
+.main .categories .category h2,
+.main .categories .category_active h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 39px;
+  text-align: center;
+  color: #81d4fe;
+}
+
+.main .categories .category_active h2 {
+  color: #000080;
+}
+
+.main .button {
+  background: #81d5fe;
+  box-shadow: 0px 0px 6px 1px rgba(129, 212, 254, 0.3);
+  border-radius: 47px;
+  padding: 0.5rem 2.5rem;
+  cursor: pointer;
+}
+
+.main .button h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 45px;
+  color: #000080;
+}
