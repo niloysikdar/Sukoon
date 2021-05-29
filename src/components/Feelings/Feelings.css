@@ -114,6 +114,18 @@
   right: 0;
 }
 
+.tellmore {
+  margin-top: 15px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #e5ffff;
+}
+
 @media (max-width: 800px) {
   .main h2 {
     font-size: 35px;
