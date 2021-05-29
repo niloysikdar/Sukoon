@@ -1,5 +1,6 @@
 import { FeelingsList } from "./FeelingsList";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Feelings.css";
 
 const Feelings = () => {
@@ -23,9 +24,11 @@ const Feelings = () => {
           );
         })}
       </div>
-      <button className="button">
-        <span>Submit </span>
-      </button>
+      <Link to="/resources">
+        <button className="button">
+          <span>Submit </span>
+        </button>
+      </Link>
     </div>
   );
 };
