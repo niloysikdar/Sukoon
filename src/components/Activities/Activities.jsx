@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Activitylist } from "./Activitylist";
 import classes from "./Activities.module.css";
 import HeaderDesktop from "../Header/HeaderDesktop";
@@ -14,11 +15,17 @@ const Activities = () => {
               <div className={classes.container}>
                 {item.activities.map((ac) => {
                   return (
-                    <div className={classes.box} key={ac.title}>
-                      <img src={ac.image} alt="" />
-                      <h3>{ac.title}</h3>
-                      <p>{ac.description}</p>
-                    </div>
+                    <Link
+                      to={ac.link}
+                      style={{ textDecoration: "none" }}
+                      key={ac.title}
+                    >
+                      <div className={classes.box}>
+                        <img src={ac.image} alt="" />
+                        <h3>{ac.title}</h3>
+                        <p>{ac.description}</p>
+                      </div>
+                    </Link>
                   );
                 })}
               </div>
