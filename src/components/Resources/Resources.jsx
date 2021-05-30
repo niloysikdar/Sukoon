@@ -4,6 +4,7 @@ import classes from "./Resources.module.css";
 import HeaderMobile from "../Header/HeaderMobile";
 import BottomNav from "../BottomNav/BottomNav";
 import HeaderDesktop from "../Header/HeaderDesktop";
+import Chatbot from "../Chatbot/Chatbot";
 
 const Resources = () => {
   return (
@@ -33,6 +34,7 @@ const Resources = () => {
         </h3>
         <button className={classes.button}>Go to Chatbot</button>
       </div>
+      <Chatbot />
     </div>
   );
 };

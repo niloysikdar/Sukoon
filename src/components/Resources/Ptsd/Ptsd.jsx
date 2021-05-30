@@ -3,6 +3,7 @@ import breathing from "../../../assets/details/breathing.png";
 import HeaderDesktop from "../../Header/HeaderDesktop";
 import { PtsdContent } from "./PtsdContent";
 import classes from "../Depression/Depression.module.css";
+import Chatbot from "../../Chatbot/Chatbot";
 
 const Ptsd = () => {
   return (
@@ -64,6 +65,7 @@ const Ptsd = () => {
           </div>
         </div>
       </div>
+      <Chatbot />
     </div>
   );
 };
