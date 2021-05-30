@@ -15,7 +15,9 @@ const HeaderDesktop = () => {
         <Link to="/resources" style={{ textDecoration: "none" }}>
           <h2>Resources</h2>
         </Link>
-        <h2>Test</h2>
+        <Link to="/test" style={{ textDecoration: "none" }}>
+          <h2>Test</h2>
+        </Link>
         <div className={classes.profile}></div>
       </div>
     </div>

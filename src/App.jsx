@@ -11,6 +11,7 @@ import Jokes from "./components/Jokes/Jokes";
 import { Activitylist } from "./components/Activities/Activitylist";
 import { Activitylist2 } from "./components/Activities/Activitylist2";
 import Quotes from "./components/Quotes/Quotes";
+import Test from "./components/Test/Test";
 
 const App = () => {
   return (
@@ -47,6 +48,9 @@ const App = () => {
       </Route>
       <Route path="/resources/ptsd">
         <Ptsd />
+      </Route>
+      <Route path="/test">
+        <Test />
       </Route>
     </Switch>
   );
