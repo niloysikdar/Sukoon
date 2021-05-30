@@ -8,6 +8,8 @@ import Ptsd from "./components/Resources/Ptsd/Ptsd";
 import Tellmore from "./components/Tellmore/Tellmore";
 import Activities from "./components/Activities/Activities";
 import Jokes from "./components/Jokes/Jokes";
+import { Activitylist } from "./components/Activities/Activitylist";
+import { Activitylist2 } from "./components/Activities/Activitylist2";
 
 const App = () => {
   return (
@@ -22,7 +24,10 @@ const App = () => {
         <Tellmore />
       </Route>
       <Route path="/activities" exact>
-        <Activities />
+        <Activities activitylist={Activitylist} />
+      </Route>
+      <Route path="/activities2">
+        <Activities activitylist={Activitylist2} />
       </Route>
       <Route path="/activities/jokes">
         <Jokes />
