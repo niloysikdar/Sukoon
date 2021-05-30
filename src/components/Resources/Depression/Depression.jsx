@@ -3,6 +3,7 @@ import breathing from "../../../assets/details/breathing.png";
 import { DepressionContent } from "./DepressionContent";
 import classes from "./Depression.module.css";
 import HeaderDesktop from "../../Header/HeaderDesktop";
+import Chatbot from "../../Chatbot/Chatbot";
 
 const Depression = () => {
   return (
@@ -64,6 +65,7 @@ const Depression = () => {
           </div>
         </div>
       </div>
+      <Chatbot />
     </div>
   );
 };
