@@ -1,8 +1,11 @@
 import { Testdata } from "./Testdata";
 import classes from "./Test.module.css";
 import HeaderDesktop from "../Header/HeaderDesktop";
+import swal from "sweetalert";
+import { useHistory } from "react-router-dom";
 
 const Test = () => {
+  const history = useHistory();
   return (
     <div>
       <HeaderDesktop />
@@ -30,7 +33,16 @@ const Test = () => {
             );
           })}
         </ul>
-        <div className={classes.button}>
+        <div
+          className={classes.button}
+          onClick={(e) => {
+            swal("You have 70% chance of anxiety", {
+              icon: "warning",
+            }).then(() => {
+              history.replace("/activities2");
+            });
+          }}
+        >
           <p>View Result</p>
         </div>
       </div>
