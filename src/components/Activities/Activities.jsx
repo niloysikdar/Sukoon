@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
-import { Activitylist } from "./Activitylist";
 import classes from "./Activities.module.css";
 import HeaderDesktop from "../Header/HeaderDesktop";
 
-const Activities = () => {
+const Activities = ({ activitylist }) => {
   return (
     <div>
       <HeaderDesktop />
       <div className={classes.main}>
-        {Activitylist.map((item) => {
+        {activitylist.map((item) => {
           return (
             <div key={item.category} className={classes.wrapper}>
               <h2>{item.category}</h2>

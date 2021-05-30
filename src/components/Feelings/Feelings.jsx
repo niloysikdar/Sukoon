@@ -24,7 +24,7 @@ const Feelings = () => {
           );
         })}
       </div>
-      <Link to="/resources">
+      <Link to={current === "Happy" ? "/activities" : "/activities2"}>
         <button className="button">
           <span>Submit </span>
         </button>
