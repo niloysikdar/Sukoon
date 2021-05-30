@@ -1,16 +1,19 @@
 import { Testdata } from "./Testdata";
+import classes from "./Test.module.css";
+import HeaderDesktop from "../Header/HeaderDesktop";
 
 const Test = () => {
   return (
     <div>
-      <div className="main">
+      <HeaderDesktop />
+      <div className={classes.main}>
         <h2>Test for Anxiety</h2>
-        <ul className="quiz">
+        <ul className={classes.quiz}>
           {Testdata.map((item) => {
             return (
               <li key={item.question}>
                 <h4>{item.question}</h4>
-                <ul className="choices">
+                <ul className={classes.choices}>
                   {item.options.map((option) => {
                     return (
                       <li key={option}>
@@ -22,12 +25,14 @@ const Test = () => {
                     );
                   })}
                 </ul>
+                <br />
               </li>
             );
           })}
         </ul>
-
-        <button className="view-results">View Results</button>
+        <div className={classes.button}>
+          <p>View Result</p>
+        </div>
       </div>
     </div>
   );

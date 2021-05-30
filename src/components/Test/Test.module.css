@@ -1,0 +1,82 @@
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: #000080;
+  padding: 3rem 0;
+}
+
+.main h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 65px;
+  color: #81d4fe;
+  margin: 3rem 0 2rem;
+}
+
+.quiz,
+.choices {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quiz h4 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 49px;
+  color: #9addfe;
+}
+
+.quiz span {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 39px;
+  color: #dbffff;
+}
+
+.choices li {
+  margin-bottom: 5px;
+}
+
+.choices label {
+  display: flex;
+  align-items: center;
+}
+
+.choices label,
+input[type="radio"] {
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.button {
+  background: #81d5fe;
+  box-shadow: 0px 0px 6px 1px rgba(129, 212, 254, 0.3);
+  border-radius: 47px;
+  text-align: center;
+  padding: 0.5rem 4rem;
+  cursor: pointer;
+}
+
+.button p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 45px;
+  color: #000080;
+}
