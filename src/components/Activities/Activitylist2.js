@@ -6,7 +6,7 @@ export const Activitylist2 = [
         image: require("../../assets/details/breathing.png").default,
         title: "Motivational Quotes",
         description: "Get some motivation buddy, view a quote",
-        link: "/activities2",
+        link: "/activities2/quotes",
       },
       {
         image: require("../../assets/details/breathing.png").default,

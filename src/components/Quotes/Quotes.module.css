@@ -1,0 +1,58 @@
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--darkblue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 10rem;
+}
+
+.main h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  color: #9addfe;
+}
+
+.main h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  color: #dbffff;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.main p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 54px;
+  color: #dbffff;
+  text-align: center;
+}
+
+.main .button {
+  background: #81d5fe;
+  box-shadow: 0px 0px 6px 1px rgba(129, 212, 254, 0.3);
+  border-radius: 47px;
+  cursor: pointer;
+  padding: 0.5rem 3rem;
+  margin-top: 4rem;
+}
+
+.main .button h4 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 45px;
+  color: #000080;
+}

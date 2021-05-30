@@ -10,6 +10,7 @@ import Activities from "./components/Activities/Activities";
 import Jokes from "./components/Jokes/Jokes";
 import { Activitylist } from "./components/Activities/Activitylist";
 import { Activitylist2 } from "./components/Activities/Activitylist2";
+import Quotes from "./components/Quotes/Quotes";
 
 const App = () => {
   return (
@@ -26,8 +27,11 @@ const App = () => {
       <Route path="/activities" exact>
         <Activities activitylist={Activitylist} />
       </Route>
-      <Route path="/activities2">
+      <Route path="/activities2" exact>
         <Activities activitylist={Activitylist2} />
+      </Route>
+      <Route path="/activities2/quotes">
+        <Quotes />
       </Route>
       <Route path="/activities/jokes">
         <Jokes />
