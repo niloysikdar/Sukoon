@@ -37,7 +37,7 @@ const Tellmore = () => {
           );
         })}
       </div>
-      <Link to="/resources" style={{ textDecoration: "none" }}>
+      <Link to="/activities" style={{ textDecoration: "none" }}>
         <div className={classes.button}>
           <h2>Submit</h2>
         </div>

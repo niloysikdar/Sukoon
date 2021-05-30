@@ -10,3 +10,15 @@
   --darkblue: #000080;
   --header: #000075;
 }
+
+/* Custom Scroll Bar */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #81d5fe;
+  border-radius: 4px;
+}
