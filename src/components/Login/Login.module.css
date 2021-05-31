@@ -1,0 +1,80 @@
+.main_login {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.splash {
+  background: var(--darkblue);
+  height: 100%;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.splash img {
+  height: 153px;
+  width: 222px;
+  margin-bottom: 15px;
+}
+
+.splash .title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 71px;
+  color: #dbffff;
+}
+
+.login {
+  background: url("../../assets/login/ipad-bg.svg") no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 65%;
+  padding: 3rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 65px;
+  color: #81d4fe;
+}
+
+#sawo-container {
+  margin-top: 6rem;
+  height: 250px;
+  width: 300px;
+  background: #000080;
+}
+
+.textinput-label {
+  color: #000;
+}
+
+@media (max-width: 1000px) {
+  .splash {
+    display: none;
+  }
+  .login {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  #sawo-container {
+    width: 300px;
+  }
+}
