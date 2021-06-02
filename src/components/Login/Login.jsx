@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import Sawo from "sawo";
 import logo from "../../assets/login/logo.svg";
-import "./Login.css";
+import "./Login.module.css";
 
 const { REACT_APP_API_SAWO } = process.env;
 

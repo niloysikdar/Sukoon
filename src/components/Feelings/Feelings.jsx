@@ -1,7 +1,7 @@
 import { FeelingsList } from "./FeelingsList";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Feelings.css";
+import "./Feelings.module.css";
 
 const Feelings = () => {
   const [current, setCurrent] = useState("");
