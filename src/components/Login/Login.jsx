@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import Sawo from "sawo";
 import logo from "../../assets/login/logo.svg";
-import "./Login.module.css";
+import classes from "./Login.module.css";
 
 const { REACT_APP_API_SAWO } = process.env;
 
@@ -23,12 +23,12 @@ const Login = () => {
   }, [history]);
 
   return (
-    <div className="main_login">
-      <div className="splash">
+    <div className={classes.main_login}>
+      <div className={classes.splash}>
         <img src={logo} alt="Logo" />
-        <h2 className="title">Sukoon</h2>
+        <h2 className={classes.title}>Sukoon</h2>
       </div>
-      <div className="login">
+      <div className={classes.login}>
         <h2>Login</h2>
         <div id="sawo-container"></div>
       </div>

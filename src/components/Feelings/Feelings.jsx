@@ -1,14 +1,14 @@
 import { FeelingsList } from "./FeelingsList";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Feelings.module.css";
+import classes from "./Feelings.module.css";
 
 const Feelings = () => {
   const [current, setCurrent] = useState("");
   return (
-    <div className="main">
+    <div className={classes.main}>
       <h2>How are you feeling today ?</h2>
-      <div className="feelings">
+      <div className={classes.feelings}>
         {FeelingsList.map((item) => {
           return (
             <div
@@ -25,12 +25,12 @@ const Feelings = () => {
         })}
       </div>
       <Link to={current === "Happy" ? "/activities" : "/activities2"}>
-        <button className="button">
+        <button className={classes.button}>
           <span>Submit </span>
         </button>
       </Link>
       <Link to="/tellmore">
-        <p className="tellmore">I want to tell more</p>
+        <p className={classes.tellmore}>I want to tell more</p>
       </Link>
     </div>
   );
