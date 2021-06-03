@@ -39,6 +39,20 @@
   cursor: pointer;
   transition: 0.5s all;
 }
+.feeling .feel_active .active{
+  position: relative;
+  height: 150px;
+  width: 200px;
+  margin: 15px 15px;
+  border: 1px solid rgba(154, 221, 254, 0.6);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.5s all;
+}
 
 .feelings .feel p {
   font-family: Poppins;

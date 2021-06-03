@@ -12,7 +12,7 @@ const Feelings = () => {
         {FeelingsList.map((item) => {
           return (
             <div
-              className={current === item.tag ? "feel active" : "feel"}
+              className={current === item.tag ? `${classes.feel_active}` : `${classes.feel}`}
               key={item.image}
               onClick={(e) => {
                 setCurrent(item.tag);
