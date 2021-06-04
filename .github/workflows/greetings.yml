@@ -1,0 +1,16 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Hello @${{github.actor}}, <br> Thank you for opening an issue. :partying_face: '
+        pr-message: '<h1> :partying_face: Congratulations :tada: </h1>:pray: Thank you @${{github.actor}} for taking out your time and contributing to our project. We will soon review this and if everything looks good it will be merged.'
