@@ -21,7 +21,12 @@ const Test = () => {
                     return (
                       <li key={option}>
                         <label>
-                          <input type="radio" name="question0" value="A" />
+                          <input
+                            type="radio"
+                            // Actually it was same for all the radio buttons, so I used the unique value for every question that was it's question, you can also use some integer for every question and replace that, but this also works fine.
+                            name={`question${item.question}`}
+                            value="A"
+                          />
                           <span>{option}</span>
                         </label>
                       </li>
