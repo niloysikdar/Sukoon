@@ -14,8 +14,8 @@ const Login = () => {
       identifierType: "email",
       apiKey: REACT_APP_API_SAWO,
       onSuccess: (payload) => {
+        console.log(payload);
         history.replace("/feelings");
-        // console.log(payload);
       },
     };
     let sawo = new Sawo(config);
@@ -30,7 +30,7 @@ const Login = () => {
       </div>
       <div className={classes.login}>
         <h2>Login</h2>
-        <div id="sawo-container"></div>
+        <div className={classes.sawo_container} id="sawo-container"></div>
       </div>
     </div>
   );
