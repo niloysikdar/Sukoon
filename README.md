@@ -131,4 +131,4 @@ Contributions are what make the open source community such an amazing place to b
 
 ## License
 
-Distributed under the **GNU General Public License v3.0**. See `[LICENSE](https://github.com/niloysikdar/Sukoon/blob/main/LICENSE)` for more information.
+Distributed under the **GNU General Public License v3.0**. See [LICENSE](https://github.com/niloysikdar/Sukoon/blob/main/LICENSE) for more information.
