@@ -102,7 +102,11 @@ To get a local copy up and running follow these simple steps.
 
 5. Enter the Host Name and enter `localhost` for Development Server
 
-6. Create a file named `.env.local` inside the root folder of the project and enter `REACT_APP_API_SAWO="Your SAWO API Key"`
+6. Create a file named `.env.local` inside the root folder of the project and enter
+
+   ```
+   REACT_APP_API_SAWO="Your SAWO API Key"
+   ```
 
 7. Run the Local Server
    ```sh
