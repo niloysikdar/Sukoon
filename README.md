@@ -13,21 +13,18 @@ https://github.com/othneildrew/Best-README-Template
 -->
 
 <!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://github.com/niloysikdar/Sukoon">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">Sukoon</h3>
+<p align="center">
+  <img src="https://i.imgur.com/1OYZOT7.png" alt="Logo" width="700">
+
+  <h1 align="center">Sukoon</h1>
+  <h3 align="center">Realize, Calm, Heal</h3>
 
   <p align="center">
-    project_description
-    <br />
     <a href="https://github.com/niloysikdar/Sukoon"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/niloysikdar/Sukoon">View Demo</a>
+    <a href="https://sukoon.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/niloysikdar/Sukoon/issues">Report Bug</a>
     ·
@@ -65,9 +62,9 @@ https://github.com/othneildrew/Best-README-Template
 
 ## About The Project
 
-[[Product Landing page screenshot]](./public/Screenshots/Landing.PNG)
+<!-- [[Product Landing page screenshot]](./public/Screenshots/Landing.PNG)
 [[Product Test page screenshot]](./public/Screenshots/Test.PNG)
-[[Product Activites page screenshot]](./public/Screenshots/Activities.PNG)
+[[Product Activites page screenshot]](./public/Screenshots/Activities.PNG) -->
 
 ### Built With
 
@@ -93,20 +90,24 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/github_username/Sukoon.git
    ```
 2. Install NPM packages
    ```sh
    npm install
    ```
+3. Create an account at [Sawo LABS](https://sawolabs.com/)
 
-<!-- USAGE EXAMPLES -->
+4. Create new project inside Developer Console
 
-## Usage
+5. Enter the Host Name and enter `localhost` for Development Server
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+6. Create a file named `.env.local` inside the root folder of the project and enter `REACT_APP_API_SAWO="Your SAWO API Key"`
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+7. Run the Local Server
+   ```sh
+   npm start
+   ```
 
 <!-- ROADMAP -->
 
@@ -130,36 +131,4 @@ Contributions are what make the open source community such an amazing place to b
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
-<!-- CONTACT -->
-
-## Contact
-
-niloysikdar - email
-
-Project Link: [https://github.com/niloysikdar/Sukoon](https://github.com/niloysikdar/Sukoon)
-
-<!-- ACKNOWLEDGEMENTS -->
-<!--
-## Acknowledgements
-
-- []()
-- []()
-- []() -->
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username
+Distributed under the **GNU General Public License v3.0**. See `[LICENSE](https://github.com/niloysikdar/Sukoon/blob/main/LICENSE)` for more information.
