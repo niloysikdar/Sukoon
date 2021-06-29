@@ -18,6 +18,9 @@
   color: #81d4fe;
   margin: 3rem 0 2rem;
 }
+.main ul {
+  padding: 10px;
+}
 
 .quiz,
 .choices {
