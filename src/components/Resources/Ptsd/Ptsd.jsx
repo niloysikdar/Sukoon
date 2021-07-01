@@ -13,7 +13,7 @@ const Ptsd = () => {
         <div className={classes.wrapper}>
           <div className={classes.header}>
             <h2>PTSD</h2>
-            <img src={PtsdPic} alt="" />
+            <img src={PtsdPic} alt="PST" width="100%" height="100%" />
           </div>
           {PtsdContent.map((item) => {
             return (
